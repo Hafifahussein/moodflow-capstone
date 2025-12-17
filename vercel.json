@@ -10,8 +10,61 @@
     ],
     "routes": [
         {
+            "src": "/_expo/static/(.*)",
+            "headers": {
+                "cache-control": "public, max-age=31536000, immutable"
+            },
+            "continue": true
+        },
+        {
+            "src": "/static/(.*)",
+            "headers": {
+                "cache-control": "public, max-age=31536000, immutable"
+            },
+            "continue": true
+        },
+        {
+            "src": "/assets/(.*)",
+            "headers": {
+                "cache-control": "public, max-age=31536000, immutable"
+            },
+            "continue": true
+        },
+        {
+            "src": "/favicon.ico",
+            "dest": "/favicon.ico"
+        },
+        {
+            "src": "/manifest.json",
+            "dest": "/manifest.json"
+        },
+        {
             "src": "/(.*)",
-            "dest": "/"
+            "dest": "/index.html",
+            "headers": {
+                "cache-control": "public, max-age=0, must-revalidate"
+            }
+        }
+    ],
+    "headers": [
+        {
+            "source": "/service-worker.js",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, max-age=0, must-revalidate"
+                },
+                {
+                    "key": "Service-Worker-Allowed",
+                    "value": "/"
+                }
+            ]
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/_expo/(.*)",
+            "destination": "/_expo/$1"
         }
     ]
 }

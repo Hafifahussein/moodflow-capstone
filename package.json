@@ -7,8 +7,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "build": "expo build:web",
-    "predeploy": "expo export --platform web"
+    "build": "expo export --platform web --output-dir public",
+    "predeploy": "expo export --platform web",
+    "debug": "expo export --platform web && echo '=== DIST FOLDER CONTENTS ===' && find dist -type f | head -20"
   },
   "dependencies": {
     "@miblanchard/react-native-slider": "^2.6.0",
