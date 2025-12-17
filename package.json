@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "build": "expo export --platform web && mkdir -p dist/static/js && cp -r dist/_expo/static/js/* dist/static/js/ && node -e \"const fs=require('fs'); const html=fs.readFileSync('dist/index.html','utf8'); fs.writeFileSync('dist/index.html', html.replace('/_expo/static/js/', '/static/js/'));\"",
+    "build": "expo export --platform web && cp public/_redirects dist/_redirects",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
