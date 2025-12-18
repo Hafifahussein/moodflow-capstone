@@ -575,5 +575,3 @@ __d(function(g,_r,i,a,m,_e,_d){"use strict";function e(e){return e&&e.__esModule
 __d(function(g,_r,i,a,m,_e,_d){"use strict";function e(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(_e,'__esModule',{value:!0}),Object.defineProperty(_e,"default",{enumerable:!0,get:function(){return l}});var t=(function(e){if(e&&e.__esModule)return e;var t={};return e&&Object.keys(e).forEach(function(r){var n=Object.getOwnPropertyDescriptor(e,r);Object.defineProperty(t,r,n.get?n:{enumerable:!0,get:function(){return e[r]}})}),t.default=e,t})(_r(_d[0])),r=e(_r(_d[1])),n=e(_r(_d[2]));function u(){return u=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var n in r)({}).hasOwnProperty.call(r,n)&&(e[n]=r[n])}return e},u.apply(null,arguments)}var l=e=>t.createElement(n.default,u({},e,{alpha:.87,family:"regular",style:[c.text,e.style]}));const c=r.default.create({text:{fontSize:16,lineHeight:24,marginVertical:2,letterSpacing:.5}})},504,[34,42,363]);
 __r(3);
 __r(0);
-//# sourceMappingURL=/_expo/static/js/web/AppEntry-3947f4fab4c31e8d79cfcaf23cbea78b.js.map
-//# debugId=00fe1967-674b-4196-8213-de7f0d86a1f8
